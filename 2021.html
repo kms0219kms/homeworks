@@ -17,12 +17,6 @@
 		<input type="hidden" id="two" name="two" value="TEST">
 		<input type="hidden" id="three" name="three" value="TEST">
 		<input type="hidden" id="four" name="four" value="TEST">
-		<script>
-			function insertDesc(num) {
-				var output = $('#' + num).val();
-				document.write(output)
-			}
-		</script>
 		<!-- Wrapper -->
 			<div id="wrapper">
 
@@ -92,6 +86,12 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+			<script>
+				function insertDesc(num) {
+					var output = $('#' + num).val();
+					document.write(output)
+				}
+			</script>
 
 	</body>
 </html>
