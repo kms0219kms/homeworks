@@ -13,13 +13,13 @@
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 	</head>
 	<body class="is-preload">
+		<input type="hidden" id="one" name="one" value="TEST">
+		<input type="hidden" id="two" name="two" value="TEST">
+		<input type="hidden" id="three" name="three" value="TEST">
+		<input type="hidden" id="four" name="four" value="TEST">
 		<script>
 			function insertDesc(num) {
-				var output = 'Desc_' + num
-				var Desc_one = 'TEST';
-				var Desc_two = '';
-				var Desc_three = '';
-				var Desc_four = '';
+				var output = $('#' + num).val();
 				document.write(output)
 			}
 		</script>
