@@ -6,7 +6,7 @@
 -->
 <html>
 	<head>
-		<title>Entry Bug Report Site by All PGS</title>
+		<title>2021 Homework List</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
@@ -58,7 +58,7 @@
 						<!-- Three -->
 							<article id="three">
 								<h2 class="major">2021. 04 ~ 06 정보윤리 프로젝트</h2>
-								<a href="javascript:;"><span class="image main"><img width="745" src="./img/20210420_100251.jpg"></img></span></a>
+								<span class="image main"><img width="745" src="./img/20210420_100251.jpg" @click="/2021-jungbo.html"></img></span>
 							</article>
 
 						<!-- Four -->
@@ -84,5 +84,9 @@
 		<script src="assets/js/breakpoints.min.js"></script>
 		<script src="assets/js/util.js"></script>
 		<script src="assets/js/main.js"></script>
+
+		<script type="text/javascript">
+			$('img').click(function(){var event = $('[@click]');if(event){console.log(event + '으/로 이 페이지가 이동됩니다.');window.open(event);}else{void(0);});
+		</script>
 	</body>
 </html>
