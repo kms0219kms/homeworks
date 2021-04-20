@@ -14,18 +14,11 @@
     
     <script type="text/javascript" lang="js" language="Javascript">
       window.onload = function () {
-        var script = document.createElement('script');
-        var importjs = 'js/2021-jungbo.js';
-        var date = new Date();
-        var year = date.getFullYear();
-        var month = ("0" + (1 + date.getMonth())).slice(-2);
-        var day = ("0" + date.getDate()).slice(-2);
-        var version = year + month + day;
-        
-        script.type = 'text/javascript';
-        script.lang = 'js';
-        script.language = 'Javascript';
-        script.src = importjs + '?r=' + Math.random(); + '&v=' + version + '&';
+        setTimeout(function() {
+          console.clear();
+          document.title = "2021 정보윤리 프로젝트";
+          console.log('%cThis Page is Successfully Loaded!', 'color:green; font-size:35px;');
+        }, 1500);
       }
     </script>
   </body>
