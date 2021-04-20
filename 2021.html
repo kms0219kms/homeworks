@@ -58,7 +58,7 @@
 						<!-- Three -->
 							<article id="three">
 								<h2 class="major">2021. 04 ~ 06 정보윤리 프로젝트</h2>
-								<span class="image main"><img width="745" src="./img/20210420_100251.jpg" @click="/2021-jungbo.html"></img></span>
+								<span class="image main"><img width="745" src="./img/20210420_100251.jpg" return-click="/2021-jungbo.html"></img></span>
 							</article>
 
 						<!-- Four -->
@@ -86,7 +86,7 @@
 		<script src="assets/js/main.js"></script>
 
 		<script type="text/javascript">
-			$('img').click(function(){var event = $('[@click]');if(event){console.log(event + '으/로 이 페이지가 이동됩니다.');window.open(event);}else{void(0);}});
+			$('img').click(function(){var event = $('[return-click]');if(event){console.log(event + '으/로 이 페이지가 이동됩니다.');window.open(event);}else{void(0);}});
 		</script>
 	</body>
 </html>
