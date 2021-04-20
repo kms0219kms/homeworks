@@ -46,25 +46,25 @@
 						<!-- One -->
 							<article id="one">
 								<h2 class="major">2021. 03. 11 과학 과제</h2>
-								<span class="image main"><img width="745" src="./img/20210311_123019.jpg"></img></span>
+								<span class="image main"><img id="one-img" width="745" src="./img/20210311_123019.jpg"></img></span>
 							</article>
 
 						<!-- Two -->
 							<article id="two">
 								<h2 class="major">2021. 03. 25 아무거나챌린지 성공</h2>
-								<span class="image main"><img width="745" src="./img/20210325_150354.jpg"></img></span>
+								<span class="image main"><img id="two-img" width="745" src="./img/20210325_150354.jpg"></img></span>
 							</article>
 
 						<!-- Three -->
 							<article id="three">
 								<h2 class="major">2021. 04 ~ 06 정보윤리 프로젝트</h2>
-								<span class="image main"><img width="745" src="./img/20210420_100251.jpg" return-click="/2021-jungbo.html"></img></span>
+								<span class="image main"><img id="three-img" width="745" src="./img/20210420_100251.jpg"></img></span>
 							</article>
 
 						<!-- Four -->
 							<article id="four">
 								<h2 class="major">undefined</h2>
-								<span class="image main"><img width="745" height="350" scrolling="no" src="./img/.jpg"></img></span>
+								<span class="image main"><img id="four-img" width="745" height="350" scrolling="no" src="./img/.jpg"></img></span>
 							</article>
 					</div>
 
@@ -86,7 +86,7 @@
 		<script src="assets/js/main.js"></script>
 
 		<script type="text/javascript">
-			$('img').click(function(){var event = $('[return-click]');if(event){console.log(event + '으/로 이 페이지가 이동됩니다.');window.open(event);}else{void(0);}});
+			$('three-img').click(function(){console.log('/2021-jungbo.html' + '으/로 이 페이지가 이동됩니다.');window.open('/2021-jungbo.html');});
 		</script>
 	</body>
 </html>
