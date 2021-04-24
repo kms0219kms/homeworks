@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <title>교통사고 손해보험 21.04</title>
+    <style>
+        body { margin: 0; text-align: center; overflow: hidden; }
+        img { width: auto; height: 100vh; }
+        div { display: none; }
+    </style>
+    <script>
+        function page(show, hide) {
+            $(hide).fadeOut();
+            setTimeout(function(){
+                $(show).fadeIn();
+            }, 500)
+        }
+
+        window.onload = function() {page('.Main', '.Sub')}
+    </script>
+</head>
+<body>
+    <noscript><h1>이 페이지는 Javascript가 필요한 페이지입니다.</h1></noscript>
+    <section id="index" class="index" name="index">
+        <div class="Main">
+            <a href="javascript:;" onClick="page('.Sub', '.Main')"><img src="img/2021-money-Main.png" alt="Main"></a>
+        </div>
+        <div class="Sub">
+            <a href="javascript:;" onClick="page('.Main', '.Sub')"><img src="img/2021-money-Sub.png" alt="Sub"></a>
+        </div>
+    </section>
+</body>
+</html>
