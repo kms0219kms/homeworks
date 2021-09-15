@@ -10,7 +10,7 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
-		<style>img{cursor:pointer;}.image:before{background: none !important;}.image img{background-color:#ffffff !important;}</style>
+		<style>img{cursor:pointer;}.image:before{background: none !important;}.image img{background-color:#ffffff !important;}.image.main iframe { width: 100%; }</style>
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 	</head>
 	<body class="is-preload">
@@ -47,7 +47,7 @@
 						<!-- One -->
 							<article id="one">
 								<h2 class="major">2021. 04. 24 윤성애 경제 수업</h2>
-								<span class="image main"><img id="one-img" width="745" src="./img/20210424_124557.jpg"></img></span>
+								<span class="image main"><!--<img id="one-img" width="745" src="./img/20210424_124557.jpg"></img>--><iframe src="/2021-money.html" height="745" id="one-img"></iframe></span>
 							</article>
 
 						<!-- Two -->
@@ -65,7 +65,7 @@
 						<!-- Four -->
 							<article id="four">
 								<h2 class="major">2021. 09. 15 음악</h2>
-								<span class="image main"><img id="four-img" width="745" src="./img/20210915_122158.png"></img></span>
+								<span class="image main"><!--<img id="four-img" width="745" src="./img/20210915_122158.png"></img>--><iframe src="/2021-songmaker.html?embed=1" height="745" id="four-img" style="background: rgba(255,255,255,255)"></iframe></span>
 							</article>
 					</div>
 
@@ -87,10 +87,8 @@
 		<script src="assets/js/main.js"></script>
 
 		<script type="text/javascript">
-			$('#one-img').click(function(){console.log('/2021-money.html' + '으/로 이 페이지가 이동됩니다.');window.open('/2021-money.html');});
-			$('#two-img').click(function(){console.log('/2021-jinro.html' + '으/로 이 페이지가 이동됩니다.');window.open('/2021-jinro.html');});
+			$('#two-img').click(function(){console.log('https://www.miricanvas.com/v/1d6wd8' + '으/로 이 페이지가 이동됩니다.');window.open('https://www.miricanvas.com/v/1d6wd8');});
 			$('#three-img').click(function(){console.log('https://www.miricanvas.com/v/1hdovt' + '으/로 이 페이지가 이동됩니다.');window.open('https://www.miricanvas.com/v/1hdovt');});
-			$('#four-img').click(function(){console.log('/2021-songmaker.html' + '으/로 이 페이지가 이동됩니다.');window.open('/2021-songmaker.html?embed=1');});
 		</script>
 	</body>
 </html>
