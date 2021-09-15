@@ -29,7 +29,7 @@
     var param = (name) => { name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]"); var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"), results = regex.exec(location.search); return results == null ? "" : decodeURIComponent(results[1].replace(/\+/g, " ")); }
     if (param('embed') == 1) {
       var page = document.createElement('iframe');
-      viewer.src = 'https://musiclab.chromeexperiments.com/Song-Maker/embed/5108741512364032';
+      page.src = 'https://musiclab.chromeexperiments.com/Song-Maker/embed/5108741512364032';
     } else {
       location.href = 'https://musiclab.chromeexperiments.com/Song-Maker/song/5108741512364032';
     }
