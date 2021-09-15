@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+	<base href="/Song-Maker/client/">
+	<title>Chrome Music Lab - Song Maker</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+	<meta name="twitter:card" content="player"/>
+	<meta name="twitter:player" content="https://musiclab.chromeexperiments.com/Song-Maker/embed/5656140764938240"/>
+	<meta name="twitter:title" content="Chrome Music Lab - Song made Sep 15, 2021"/>
+	<meta name="og:url" content="https://musiclab.chromeexperiments.com/Song-Maker/song/5656140764938240"/>
+	<meta name="og:title" content="Chrome Music Lab - Song made Sep 15, 2021"/>
+	<meta name="twitter:player:width" content="560"/>
+	<meta name="twitter:player:height" content="315"/>
+	<meta name="twitter:image" content="https://musiclab.chromeexperiments.com/Song-Maker/client/images/song-maker.jpg"/>
+	<meta name="og:description" content="Check out this song created with Song Maker."/>
+	<meta name="description" content="Check out this song created with Song Maker."/>
+	<meta name="og:image" content="https://musiclab.chromeexperiments.com/Song-Maker/client/images/song-maker.jpg"/>
+	<link href="https://fonts.googleapis.com/css?family=Quicksand:400,500,700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Poppins:400" rel="stylesheet">
+	<link rel="icon" href="https://musiclab.chromeexperiments.com/Song-Maker/client/images/favicon.png" type="image/png">
+  <style>
+  body { margin: 0; overflow: hidden; }
+  iframe { width: 100vw; height: 100vh; border: none; }
+  </style>
+</head>
+<body>
+  <script>
+    var param = (name) => { name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]"); var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"), results = regex.exec(location.search); return results == null ? "" : decodeURIComponent(results[1].replace(/\+/g, " ")); }
+    if (param('embed') == 1) {
+      var page = document.createElement('iframe');
+      viewer.src = 'https://musiclab.chromeexperiments.com/Song-Maker/embed/5108741512364032';
+    } else {
+      location.href = 'https://musiclab.chromeexperiments.com/Song-Maker/song/5108741512364032';
+    }
+    body.appendChild(page);
+  </script>
+  <noscript>
+    <div id="incompatible" style="text-align: center; ">
+      <div class="wrapper" style="padding: 20px;">
+        <img src="https://musiclab.chromeexperiments.com/Song-Maker/client/images/page-incompatible.svg">
+        <p>Oops, sorry for the tech trouble.</p>
+        <p>For best experience,<br>view in Chrome browser.</p>
+      </div>
+    </div>
+  </noscript>
+</body>
+</html>
