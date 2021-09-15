@@ -1280,7 +1280,7 @@
             .text-uppercase {
                 font-family: 'Jeju Gothic', sans-serif !important;
             }
-            
+            body.framed { margin: 0; padding: 0; overflow: hidden; }
             iframe { width: 100vw; height: 100vh; border: none; }
         </style>
     </head>
@@ -1303,12 +1303,12 @@
                                     </a> -->
                                     
                                     <!-- <a href="/examples/landing-page.html" target="_blank" class="btn btn-primary btn-round mr-3"> -->
-                                    <a href="/2020.html" target="page" class="btn btn-primary btn-round mr-3" onclick="$('#section').fadeOut();$('#page').fadeIn();">
+                                    <a href="/2020.html" target="page" class="btn btn-primary btn-round mr-3" onclick="$('#section').fadeOut();$('body').addClass('framed');$('#page').fadeIn();">
                                         <em class="fa fa-eye fa-fw"></em>
                                         <!-- Landing Page Demo --> <span class="text-white">2021학년도 이전 과제 바로가기</span>
                                     </a>
                                     <!-- <a href="/dark.html" target="_blank" class="btn btn-danger btn-round"> -->
-                                    <a href="/2021.html" target="page" class="btn btn-danger btn-round" onclick="$('#section').fadeOut();$('#page').fadeIn();">
+                                    <a href="/2021.html" target="page" class="btn btn-danger btn-round" onclick="$('#section').fadeOut();$('body').addClass('framed');$('#page').fadeIn();">
                                         <em class="fa fa-eye fa-fw"></em>
                                         <!-- Dark version -->  <span class="text-white">2021학년도 과제 바로가기</span>
                                     </a>
